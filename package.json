@@ -15,7 +15,8 @@
     "react-navigation": "^3.11.1",
     "react-redux": "^7.1.0",
     "redux": "^4.0.4",
-    "redux-logger": "^3.0.6"
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
