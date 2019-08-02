@@ -6,6 +6,10 @@ export const NEW_MESSAGE = 'NEW_MESSAGE';
 export const NEW_USER_ACTION = 'NEW_USER_ACTION';
 export const ALL_USER_ACTION = 'ALL_USER_ACTION';
 
+export const INCOMING_OFFER_ACTION = 'INCOMING_OFFER_ACTION';
+export const INCOMING_ANSWER_ACTION = 'INCOMING_ANSWER_ACTION';
+export const INCOMING_CANDIDATE_ACTION = 'INCOMING_CANDIDATE_ACTION';
+
 export const setSignallingServerConnectionStatus = (type, status, errorMessage) => ({
     type,
     payload: {

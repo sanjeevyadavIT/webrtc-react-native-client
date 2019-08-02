@@ -5,6 +5,9 @@ import {
     SIGNALLING_SERVER_CONNECTION_ERROR,
     ALL_USER_ACTION,
     NEW_USER_ACTION,
+    INCOMING_OFFER_ACTION,
+    INCOMING_ANSWER_ACTION,
+    INCOMING_CANDIDATE_ACTION,
 } from './actions';
 
 const initialState = {
@@ -35,6 +38,27 @@ export default (state = initialState, { type, payload }) => {
             return {
                 ...state,
                 users: [...state.users, payload.user],
+            }
+        case INCOMING_OFFER_ACTION:
+            return {
+                ...state,
+                incomingOffer: {
+                    ...payload,
+                }
+            }
+        case INCOMING_ANSWER_ACTION:
+            return {
+                ...state,
+                incomingAnswer: {
+                    ...payload,
+                }
+            }
+        case INCOMING_CANDIDATE_ACTION:
+            return {
+                ...state,
+                incomingCandidate: {
+                    ...payload,
+                }
             }
         default:
             return state;
